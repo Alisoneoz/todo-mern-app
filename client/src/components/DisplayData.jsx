@@ -180,7 +180,7 @@ const DisplayData = () => {
                   updateItem={updateItem}
                   taskToUpdate={taskToUpdate}
                   handleChange={handleChange}
-                /> // renders el form que creaste para actualizar la tarea en cuestión
+                /> // renders form to update the task
               ) : (
                 <>
                   <TaskDetails

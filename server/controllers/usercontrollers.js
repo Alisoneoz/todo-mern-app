@@ -23,9 +23,7 @@ const login = async (req, res) => {
   
   try{
     const user = await User.logInUser(email, password)
-    //const userFoundByEmail= await User.find({ email })
-    //console.log(userFoundByEmail)
-     const token = createToken(user._id)
+    const token = createToken(user._id)
     res.status(200).json({email, token, username: user.username })
   } catch(error){
     res.status(400).json({ error: error.message})
